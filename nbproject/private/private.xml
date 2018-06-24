@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/java/NetBeansProjects/AerolineaProjectJ6/web/WEB-INF/jsp/resgistrarse.jsp</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaProjectJ6/src/java/com/aerolinea/control/ControlPrincipal.java</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaProjectJ6/src/java/com/aerolinea/config/RootConfig.java</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaProjectJ6/src/java/hibernate.reveng.xml</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaProjectJ6/web/WEB-INF/jsp/principal.jsp</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaProjectJ6/src/java/com/aerolinea/entidad/Usuarios.java</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaProjectJ6/src/java/com/aerolinea/dao/UsuarioDao.java</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaProjectJ6/src/java/com/aerolinea/util/HibernateUtil.java</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaProjectJ6/src/java/com/aerolinea/config/WebConfig.java</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaProjectJ6/src/java/com/aerolinea/config/WebInicializer.java</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaProjectJ6/src/java/hibernate.cfg.xml</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaProjectJ6/web/WEB-INF/jsp/usuario.jsp</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaProjectJ6/web/WEB-INF/jsp/index.jsp</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaProjectJ6/src/java/com/aerolinea/control/ControlIndex.java</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaProjectJ6/src/java/com/aerolinea/control/ControlUsuario.java</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaProjectJ6/src/java/com/aerolinea/dao/UsuarioDaoImpl.java</file>
+        </group>
+    </open-files>
+</project-private>
