@@ -38,7 +38,7 @@ public class UsuarioDaoImpl implements UsuarioDao {
         try {
             s.beginTransaction();
             Query q = s.createQuery(
-                    "select u from Usuarios u join fetch u.paises join fetch u.roles");
+                    "select u from Usuarios u join fetch u.paises join fetch u.roles"); // fecth para hacer el join con los campos de referencia, al ser hibernate lazy
             lista = q.list();
             s.getTransaction().commit();
             return lista;

@@ -16,8 +16,7 @@
                         <td><input type="text" name="txtUsuario" value="" /> </td>
                     </tr> <tr>
                         <td>Clave: </td>
-                        <td><input type="password" name="txtClave"
-                                   value="" /> </td> </tr>
+                        <td><input type="password" name="txtClave" value="" /> </td> </tr>
                     <tr>
                         <td colspan="2" align="right">
                             <input type="submit" value="Entrar" /> </td>
