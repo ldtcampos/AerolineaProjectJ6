@@ -29,8 +29,8 @@
                         <td>${u.telefono}</td> 
                         <td>${u.paises.pais}</td> 
                         <td>${u.roles.rol}</td> 
-                        <td></td>
-                        <td></td> </tr>
+                        <td><a href="editar?idusuario=${u.idusuario}">Editar</a></td>
+                        <td><a href="eliminar?idusuario=${u.idusuario}">Eliminar</a></td>
                 </c:forEach> </tbody>
         </table>
     </body>

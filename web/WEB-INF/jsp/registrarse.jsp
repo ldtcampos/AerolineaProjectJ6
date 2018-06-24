@@ -19,7 +19,8 @@
                    commandName="userForm">
             <form:errors path="*" cssClass="errorblock" element="div" /> <table>
                 <tr>
-                    <td><form:label path="idusuario">Usuario</form:label></td> <td><form:input path="idusuario" />
+                    <td><form:label path="idusuario">Usuario</form:label></td> <td>
+                        <form:input path="idusuario" />
                         <form:errors path="idusuario" cssClass="error" /></td> </tr>
                 <tr>
                     <td><form:label path="nombres">Nombres</form:label></td> <td><form:input path="nombres" />
@@ -44,7 +45,7 @@
                             <form:options items="${paises}" itemLabel="pais" itemValue="idpais" />
                         </form:select></td> </tr>
                 <tr>
-                    <td><form:label path="rol.idrol">Rol</form:label></td> <td><form:select path="rol.idrol">
+                    <td><form:label path="roles.idrol">Rol</form:label></td> <td><form:select path="roles.idrol">
                             <form:option value="0" label="--- Select ---"/>
                             <form:options items="${roles}" itemLabel="rol" itemValue="idrol" />
                         </form:select></td> </tr>

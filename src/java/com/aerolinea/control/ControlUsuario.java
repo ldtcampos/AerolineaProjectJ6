@@ -77,15 +77,48 @@ public class ControlUsuario {
         return "registrarse";
     }
 
-    @RequestMapping(value = "/addUsuario", method = RequestMethod.POST)
+    @RequestMapping(value = "/editar", method = GET)
+    public String editarFormRegistro(@RequestParam("idusuario") String idusuario, Map<String, Object> model) {
+        Usuarios userForm = dao.getUsuario(idusuario);
+        model.put("userForm", userForm);
+        try {
+            List<Paises> p = dao.getPaises();
+            List<Roles> r = dao.getRoles();
+            model.put("paises", p);
+            model.put("roles", r);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        return "registrarse";
+    }
     
+        @RequestMapping(value = "/eliminar", method = GET)
+    public String eliminarFormRegistro(@RequestParam("idusuario") String idusuario) {
+        //Usuarios userForm = dao.getUsuario(idusuario);
+        //model.put("userForm", userForm);
+        try {
+            dao.EliminarUsuario(idusuario);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        return "redirect:/usuarios";
+    }
+
+
+    @RequestMapping(value = "/addUsuario", method = RequestMethod.POST)
     public String addUsuario(@Valid @ModelAttribute("userForm") Usuarios u,
-            BindingResult result) {
+            BindingResult result, Map<String, Object> model) {
         if (result.hasErrors()) {
+            List<Paises> p = dao.getPaises();
+            List<Roles> r = dao.getRoles();
+            model.put("paises", p);
+            model.put("roles", r);
             return "registrarse";
         }
         try {
-            u.setClave(UsuarioDaoImpl.sha1(u.getClave()));
+            if (dao.getUsuario(u.getIdusuario()) == null) {
+                u.setClave(UsuarioDaoImpl.sha1(u.getClave()));
+            }
             dao.guardarUsuario(u);
         } catch (Exception e) {
             System.out.println(e.getMessage());
